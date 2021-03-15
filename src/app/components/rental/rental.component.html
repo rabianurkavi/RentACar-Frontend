@@ -1,0 +1,32 @@
+<h2 class="text-center">Kiralık Araç Listesi</h2>
+
+<div *ngIf="dataLoaded == false" class="text-center">
+    <div class="spinner-border text-dark text-center" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+<table class="table" *ngIf="dataLoaded == true">
+<thead>
+    <tr>
+        <th>Marka</th>
+        <th>Araç Adı</th>
+        <th>Şirket</th>
+        <th>Müşteri Adı</th>
+        <th>Müşteri Soyadı</th>
+        <th>Alış Tarihi</th>
+        <th>Dönüş Tarihi</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let rental of rentals">
+        <td>{{rental.brandName}}</td>
+             <td>{{rental.carName}}</td>
+             <td>{{rental.companyName}}</td>
+             <td>{{rental.firstName}}</td>
+             <td>{{rental.lastName}}</td>
+             <td>{{rental.rentDate}}</td>
+             <td>{{rental.returnDate}}</td>
+    </tr>
+</tbody>
+</table>
