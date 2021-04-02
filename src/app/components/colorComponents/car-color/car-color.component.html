@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-12" style="text-align:right">
+
+
+  </div>
+  <div class="col-md-12">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Renk ismi</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let color of colors">
+          <td>{{color.colorId}}</td>
+          <td>{{color.colorName}}</td>
+          <td><button routerLink="/colors/update/{{color.colorId}}" class="btn btn-success" style="border-radius: 50px;">Update</button></td>
+          <td><button (click)="deleteColor(color)" class="btn btn-danger" style="border-radius: 50px;">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
