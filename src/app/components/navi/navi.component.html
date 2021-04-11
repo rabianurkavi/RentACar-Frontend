@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Rent A Car</a>
+    <a class="navbar-brand" href="#"><h1>〶 ReCarGo</h1> </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,16 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="">Araçlar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="">İncelemeler</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="">Galeri</a>
+          <a class="nav-link active" aria-current="page" href="#"> Ana Sayfa</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -35,35 +26,38 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Yetkili İşlemler
+            Ekleme İşlemleri
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="cars/add" href="#">Araç Ekleme işlemleri</a></li>
-            <li><a class="dropdown-item" routerLink="brands/add" href="#">Marka Ekleme işlemleri</a></li>
-            <li><a class="dropdown-item" routerLink="colors/add">Renk Ekleme işlemleri</a></li>  
-            <li><a class="dropdown-item" href="#">Güncelleme işlemleri</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" routerLink="cars/add" href="#"><h5>Araç Ekle</h5></a></li>
+            <li><a class="dropdown-item" routerLink="brands/add" href="#"><h5>Marka Ekle</h5></a></li>
+            <li><a class="dropdown-item" routerLink="colors/add"><h5>Renk Ekle</h5></a></li>  
+         
+
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="nav-item dropdown">
           <a
-            class="nav-link disabled"
+            class="nav-link dropdown-toggle"
             href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
+            Güncelleme İşlemleri
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="brands" href="#"><h5>Marka Ayarları</h5></a></li>
+            <li><a class="dropdown-item" routerLink="colors"><h5>Renk Ayarları </h5></a></li>  
+           
+          </ul>
         </li>
       </ul>
       <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Aramak istediğiniz kelimeyi yazınız."
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Ara</button>
+       
+        <button class="btn btn-bill" routerLink="register" type="submit">Üye Ol</button>
+        <button class="btn btn-primary" routerLink="login" type="submit">Giriş Yap</button>
       </form>
     </div>
   </div>

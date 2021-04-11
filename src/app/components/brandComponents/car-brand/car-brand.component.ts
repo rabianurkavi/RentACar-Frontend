@@ -30,7 +30,7 @@ export class CarBrandComponent implements OnInit {
   }
   deleteBrand(brand:Brand){
     this.brandService.delete(brand).subscribe((response=>{
-      this.toastrService.success("Araç ismi silindi")
+      this.toastrService.success("Makra ismi silindi")
       setTimeout(function(){
         location.reload()
       },400)

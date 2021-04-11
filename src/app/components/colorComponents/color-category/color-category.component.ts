@@ -45,7 +45,7 @@ export class ColorCategoryComponent implements OnInit {
   {
     if(this.currentColor)
     {
-      return "list-group-item active";
+      return "list-group-item ";
     }
     else
     {

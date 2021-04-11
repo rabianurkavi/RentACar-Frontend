@@ -1,0 +1,55 @@
+<body class="text-center">
+  <marquee direction=right><h3>ReCarGo Puan Biriktir İndirim Kazan!</h3></marquee>
+    <main class="form-signin">
+      
+      <form [formGroup]="registerForm">
+       
+        <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="h3 mb-3 fw-normal"></h1>
+        
+    <div class="all">
+      <div class="note">
+        <p>Geleceğe yolculuk güvenle devam edecek. ReCarGo</p>
+        
+        </div>
+   <div class="row">
+    <div class="">
+        <div class="form-floating">
+          
+          <input
+          formControlName="firstName" type="firstName" class="form-control" id="floatingInput" placeholder="Adınızı girin">
+          <label for="floatingInput">Adınız</label>
+        </div>
+    </div>
+    <div class="">
+        <div class="form-floating">
+          <input formControlName="lastName" type="lastName" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Soyadınız</label>
+        </div>
+    </div>
+    <div class="">
+        <div class="form-floating">
+          <input formControlName="email" type="email" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Email</label>
+        </div>
+    </div>
+    <div class="">
+        <div class="form-floating">
+          <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Şifre</label>
+        </div>
+    </div>
+</div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Beni Unutma
+          </label>
+        </div>
+    
+        <button class="btnSubmit" type="submit" (click)="register()">Üye Ol</button>
+        
+    </div>
+      </form>
+    </main>
+</body>
+

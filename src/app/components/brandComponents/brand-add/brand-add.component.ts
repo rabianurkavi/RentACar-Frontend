@@ -29,9 +29,9 @@ export class BrandAddComponent implements OnInit {
       if(this.brandAddForm.valid){
         let carModel=Object.assign({},this.brandAddForm.value)
         this.brandService.add(carModel).subscribe(response=>{
-          this.toastrService.success("Araba eklendi","Başarılı")
+          this.toastrService.success("Marka eklendi","Başarılı")
         })
-        this.toastrService.success("Araba eklendi","Başarılı")
+        this.toastrService.error("Yetkiye sahip değilsiniz!","Hata")
        }else{
          console.log(console.error());
          

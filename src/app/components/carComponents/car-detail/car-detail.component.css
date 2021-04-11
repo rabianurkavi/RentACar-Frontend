@@ -1,0 +1,57 @@
+.btn
+{
+    background-color:rgb(0, 118, 139);
+}
+html,body{
+    height:100%;
+    
+  }
+  body{
+    text-align:center;
+    width: 2px;
+  }
+  body:before{
+    content:'';
+    height:100%;
+    width: 2px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .kirala{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    font-weight:lighter;
+    font-size: 20px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .kirala:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .kirala:before,.kirala:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .kirala:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .kirala:hover:before,.kirala:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  

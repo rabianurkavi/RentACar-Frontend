@@ -1,0 +1,64 @@
+.row
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+.note
+{
+
+    border-radius:0.8rem;
+    text-align:center;
+    height: 150px;
+    background: -webkit-linear-gradient(left, #280431, #534792, #c8a0db);
+    color: #fff;
+    font-weight:lighter;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 120px;
+    
+}
+.all
+{
+    
+    border: 2px solid #0092ac;
+    border-radius:1.1rem;
+    margin-bottom: 10%;
+    width: 200%;
+    margin: auto;
+}
+.form-signin
+{
+    
+    width: 100%;
+    max-width: 330px;
+    padding: 5px;
+    margin: auto;
+   
+    margin-left: 300px;
+}
+.form-control{
+
+    padding: 1%;
+    width: 100%;
+    border-radius:1.5rem;
+   
+}
+.form-floating{
+    padding: 0.8%;
+    
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 2%;
+    width: 50%;
+    cursor: pointer;
+    background: #534792;
+    color: #fff;
+    margin-bottom: 20px;
+}

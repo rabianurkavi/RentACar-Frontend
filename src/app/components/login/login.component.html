@@ -1,0 +1,41 @@
+<body class="text-center">
+  
+    <main class="form-signin">
+      
+      <form [formGroup]="loginForm">
+        
+        <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="h3 mb-3 fw-normal"></h1>
+       
+    <div class="all">
+      <div class="note">
+        <p>En Güvenilir Araba Kiralama Sitesi</p>
+        </div>
+      
+   <div class="row">
+    <div class="">
+        <div class="form-floating">
+          <input
+          formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">E posta</label>
+        </div>
+    </div>
+    <div class="">
+        <div class="form-floating">
+          <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Parola</label>
+        </div>
+    </div>
+</div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Beni Unutma
+          </label>
+        </div>
+      
+        <button class="btnSubmit" type="submit" (click)="login()">Giriş Yap</button>
+      
+    </div>
+      </form>
+    </main>
+</body>

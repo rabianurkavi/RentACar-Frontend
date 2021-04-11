@@ -29,16 +29,19 @@ export class ColorAddComponent implements OnInit {
         let productModel =Object.assign({},this.colorAddForm.value) 
         this.colorService.add(productModel).subscribe(response=>{
           this.toastrService.success(response.message,"Başarılı")
-        },responseError=>{
+        }
+        ,responseError=>{
           if(responseError.error.ValidationErrors.length>0){
             console.log(responseError.error.Errors)
             for (let i = 0; i < responseError.error.ValidationErrors.length; i++) {
   
             this.toastrService.error(responseError.error.Errors[i].ErrorMessage,"Doğrulama hatası"
+            
               )
             }
           }
         })
+        this.toastrService.error("Yetkiye sahip değilsiniz!","Hata");
       }else{
         this.toastrService.error("Formunuz eksik","Dikkat")
       }

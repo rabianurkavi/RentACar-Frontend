@@ -24,12 +24,14 @@
   <div>
     <ul *ngIf="carDto" class="list-group list-group-flush">
       <li class="list-group-item">Marka: {{carDto.brandName}}</li>
-      <li class="list-group-item">Renk: {{carDto.colorName}}</li>
       <li class="list-group-item">Araba Adı: {{carDto.carName}}</li>
+      <li class="list-group-item">Renk: {{carDto.colorName}}</li>
       <li class="list-group-item">Model Yılı: {{carDto.modelYear}}</li>
       <li class="list-group-item">Günlük Fiyat: {{carDto.dailyPrice | currency: "TRY":"symbol-narrow":"1.2-2"}}</li>
     </ul>
   </div>
-  <button *ngIf="carDto" routerLink = "/rental/{{carDto.carId}}" type="button" class="btn btn-outline-success">Kirala</button>
-  <app-car-update *ngIf="carDto"  [carForUpdate]="carDto"></app-car-update>
+  
+   <button *ngIf="carDto" routerLink = "/rental/{{carDto.carId}}" type="button" class="btn kirala">Kirala</button>
+   <app-car-update *ngIf="carDto"  [carForUpdate]="carDto"></app-car-update>
+  
 </div>

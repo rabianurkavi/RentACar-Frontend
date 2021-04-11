@@ -45,7 +45,7 @@ export class BrandCategoryComponent implements OnInit {
     {
       if(this.currentBrand)
       {
-        return "list-group-item active"
+        return "list-group-item "
       }
       else{
         return "list-group-item"

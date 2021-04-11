@@ -1,0 +1,26 @@
+.list-group
+{
+   
+    margin-bottom: 20px;
+}
+h5:hover
+{
+    color:white;
+}
+ul li:hover{
+   
+    background-color: #451466;
+  }
+  .tik:after
+  {
+      background-color:plum;
+  }
+a
+{
+    font-size: 25px;
+}
+a:hover
+{
+    color:white;
+}
+

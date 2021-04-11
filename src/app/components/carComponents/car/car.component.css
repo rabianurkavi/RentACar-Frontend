@@ -8,3 +8,66 @@ th {
 h2{
     margin-left: 43%;
 }
+.btn-primary
+{
+   
+    height: 50px;
+    background-color: white;
+    color:rgb(144, 115, 218);
+    border:2px solid rgb(215, 182, 238);
+    border-radius: 1.2rem;
+}
+html,body{
+    height:100%;
+    
+  }
+  body{
+    text-align:center;
+    width: 2px;
+  }
+  body:before{
+    content:'';
+    height:100%;
+    width: 2px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .kirala{
+    background:#47296d;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    font-weight:250;
+    border-radius:1.2rem;
+    font-size: 20px;
+    font-family:'Segoe UI';
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .kirala:hover{
+    background:#fff;
+    color:#1c1aab;
+  }
+  .kirala:before,.kirala:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #250974;
+    transition:400ms ease all;
+  }
+  .kirala:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .kirala:hover:before,.kirala:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
