@@ -59,6 +59,32 @@
         <button class="btn btn-bill" routerLink="register" type="submit">Üye Ol</button>
         <button class="btn btn-primary" routerLink="login" type="submit">Giriş Yap</button>
       </form>
+      <div class="dropdown text-end" *ngIf="checkToEmail()==true">
+        <a
+         
+          class="d-block link-dark text-decoration-none dropdown-toggle"
+          id="dropdownUser1"
+          data-bs-toggle="dropdown"
+          aria-expanded="true"
+           type="button"
+           style="color: white;"
+        >
+        {{this.user.firstName}} {{this.user.lastName}}
+        </a>
+        
+        <div class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+          <li><a routerLink="/profil" class="dropdown-item">Profil düzenle</a></li>
+          <li><a routerLink="cars/add" class="dropdown-item">Araba ekle</a></li>
+          <li><a routerLink="brands/add" class="dropdown-item">Marka ekle</a></li>
+          <li><a routerLink="colors/add" class="dropdown-item">Renk ekle</a></li>
+          <li><a class="dropdown-item disabled">Ayarlar</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <a (click)="logOut()" class="dropdown-item">Çıkış yap</a>
+        </div>
+      </div>
+
+
+      
     </div>
   </div>
 </nav>

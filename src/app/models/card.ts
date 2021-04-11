@@ -1,8 +1,8 @@
-export interface Payment{
+export interface Card{
     id?:number;
     nameOnTheCard:string;
     cardNumber:string;
-    cardCvv:string;
+    cvv:string;
     expirationDate:string;
     moneyInTheCard?:number;
 }
