@@ -9,14 +9,16 @@ Backend ve Frontend ile Yetkili İşlemlerin Sağlanabildiği Güvenlik Önlemli
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/Buton2.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/MarkayaG%C3%B6re(gri%20araba%20g%C3%BCncellenecek).png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/RengeG%C3%B6re.png)
-![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/ArabaDetay%C4%B1.png)
+![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/ArabaDetay%C4%B1%C4%B1.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/KrediKart%C4%B1.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/ArabaG%C3%BCncelleme%C3%96ncesi.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/ArabaG%C3%BCncellemeSonras%C4%B1.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/yetkiliislemler.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/ekleme.png)
 ![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/MarkaG%C3%BCncelleme.png)
-![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/Backend.png
+![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/Backend.png)
+![banner resmi](https://github.com/rabianur412/ReCapProject-Frontend/blob/master/src/images/sqltablo.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
